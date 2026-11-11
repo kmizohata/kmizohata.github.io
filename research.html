@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja" data-ui="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Research | Kaichi Mizohata">研究 | 溝畑 海地</title>
+<meta name="description" content="溝畑海地（静岡大学 博士課程・素粒子論）のホームページ / Kaichi Mizohata - PhD student in theoretical physics, Shizuoka University">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&text=%E3%80%82%E3%80%81%E3%80%8C%E3%80%8D%E3%80%8E%E3%80%8F%EF%BC%88%EF%BC%89%E3%83%BB%EF%BC%9A%EF%BC%81%EF%BC%9F&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="github.png">
+<link rel="apple-touch-icon" href="github.png">
+<link rel="stylesheet" href="style.css">
+<script>
+    (function () {
+        var root = document.documentElement;
+        var lang = null;
+        try { lang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+        if (!lang) { try { lang = localStorage.getItem('lang'); } catch (e) {} }
+        if (lang === 'en' || lang === 'ja') { root.setAttribute('data-ui', lang); root.lang = lang; }
+    })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html"><span lang="ja">溝畑海地のホームページ</span><span lang="en">Kaichi Mizohata's Homepage</span></a>
+        <div style="display:flex;align-items:center;">
+            <nav class="nav" id="nav">
+                <a href="index.html"><span lang="ja">ホーム</span><span lang="en">Home</span></a>
+                <a href="research.html" aria-current="page"><span lang="ja">研究</span><span lang="en">Research</span></a>
+                <a href="publications.html"><span lang="ja">論文</span><span lang="en">Papers</span></a>
+                <a href="talks.html"><span lang="ja">発表</span><span lang="en">Talks</span></a>
+                <a href="cv.html"><span lang="ja">経歴</span><span lang="en">CV</span></a>
+                <a href="notes.html"><span lang="ja">ノート</span><span lang="en">Notes</span></a>
+            </nav>
+            <div class="tools">
+                <button class="icon-btn" id="lang-btn" type="button" aria-label="Language"><span lang="ja">ENG</span><span lang="en">日本語</span></button>
+                <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="メニュー" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+
+    <div class="page-head">
+        <p class="eyebrow">Research</p>
+        <h1><span lang="ja">研究</span><span lang="en">Research</span></h1>
+    </div>
+
+    <section>
+        <div class="research-detail">
+        <article class="card" id="theme1">
+            <h2><span lang="ja">拡散過程を用いた厳密くりこみ群の数値解析</span><span lang="en">Numerical analysis of the exact renormalization group based on diffusion processes</span></h2>
+
+            <p class="desc">
+                <span lang="ja">準備中</span>
+                <span lang="en">Coming soon.</span>
+            </p>
+            <div class="tags"><span class="tag">Exact renormalization group</span><span class="tag">Stochastic process</span></div>
+
+        </article>
+        <article class="card" id="theme2">
+            <h2><span lang="ja">場の理論や行列模型に対するファジー球面正則化の応用</span><span lang="en">Fuzzy sphere regularization of field theories and matrix models</span></h2>
+
+            <p class="desc">
+                <span lang="ja">準備中</span>
+                <span lang="en">Coming soon.</span>
+            </p>
+            <div class="tags"><span class="tag">Fuzzy sphere</span><span class="tag">Matrix model</span><span class="tag">CFT</span></div>
+
+        </article>
+        <article class="card" id="theme3">
+            <h2><span lang="ja">Physics Informed Kernels による効率的な配位生成</span><span lang="en">Efficient configuration generation with Physics-Informed Kernels</span></h2>
+
+            <p class="desc">
+                <span lang="ja">準備中</span>
+                <span lang="en">Coming soon.</span>
+            </p>
+            <div class="tags"><span class="tag">Monte Carlo</span><span class="tag">Machine learning</span><span class="tag">Optimal transport</span></div>
+
+        </article>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="chalk-tray" aria-hidden="true"><span class="eraser"></span><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wrap">
+        <span>© 2026 <span lang="ja">溝畑 海地</span><span lang="en">Kaichi Mizohata</span></span>
+        <span><span lang="ja">最終更新日: </span><span lang="en">Last updated: </span><span id="last-updated"></span></span>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

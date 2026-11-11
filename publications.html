@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja" data-ui="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Publications | Kaichi Mizohata">論文 | 溝畑 海地</title>
+<meta name="description" content="溝畑海地（静岡大学 博士課程・素粒子論）のホームページ / Kaichi Mizohata - PhD student in theoretical physics, Shizuoka University">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&text=%E3%80%82%E3%80%81%E3%80%8C%E3%80%8D%E3%80%8E%E3%80%8F%EF%BC%88%EF%BC%89%E3%83%BB%EF%BC%9A%EF%BC%81%EF%BC%9F&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="github.png">
+<link rel="apple-touch-icon" href="github.png">
+<link rel="stylesheet" href="style.css">
+<script>
+    (function () {
+        var root = document.documentElement;
+        var lang = null;
+        try { lang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+        if (!lang) { try { lang = localStorage.getItem('lang'); } catch (e) {} }
+        if (lang === 'en' || lang === 'ja') { root.setAttribute('data-ui', lang); root.lang = lang; }
+    })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html"><span lang="ja">溝畑海地のホームページ</span><span lang="en">Kaichi Mizohata's Homepage</span></a>
+        <div style="display:flex;align-items:center;">
+            <nav class="nav" id="nav">
+                <a href="index.html"><span lang="ja">ホーム</span><span lang="en">Home</span></a>
+                <a href="research.html"><span lang="ja">研究</span><span lang="en">Research</span></a>
+                <a href="publications.html" aria-current="page"><span lang="ja">論文</span><span lang="en">Papers</span></a>
+                <a href="talks.html"><span lang="ja">発表</span><span lang="en">Talks</span></a>
+                <a href="cv.html"><span lang="ja">経歴</span><span lang="en">CV</span></a>
+                <a href="notes.html"><span lang="ja">ノート</span><span lang="en">Notes</span></a>
+            </nav>
+            <div class="tools">
+                <button class="icon-btn" id="lang-btn" type="button" aria-label="Language"><span lang="ja">ENG</span><span lang="en">日本語</span></button>
+                <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="メニュー" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+
+    <div class="page-head">
+        <p class="eyebrow">Publications</p>
+        <h1><span lang="ja">論文</span><span lang="en">Publications</span></h1>
+    </div>
+
+    <nav class="jump-links" aria-label="Sections">
+        <a href="#preprints" data-count-of="#preprints ol.papers > li"><span lang="ja">プレプリント</span><span lang="en">Preprints</span></a>
+        <a href="#refereed" data-count-of="#refereed ol.papers > li"><span lang="ja">査読付き論文</span><span lang="en">Refereed Papers</span></a>
+    </nav>
+
+    <section id="preprints">
+        <h2><span lang="ja">プレプリント</span><span lang="en">Preprints</span><a class="more" href="https://arxiv.org/search/?searchtype=author&amp;query=Mizohata%2C+K" target="_blank" rel="noopener"><span lang="ja">arXiv で見る →</span><span lang="en">View on arXiv →</span></a></h2>
+        <p class="section-note"><span lang="ja">査読中・投稿中のものを含みます。</span><span lang="en">Including papers under review.</span></p>
+        <ol class="papers">
+            <li class="card paper">
+                <span class="paper-year">2026</span>
+                <div>
+                    <h3>Matrix-vector models for the 3D Ising CFT</h3>
+                    <p class="authors">K. Mizohata, T. Seko and A. Tsuchiya</p>
+                    <p class="journal">arXiv:2611.12071 [hep-th], <span lang="ja">JHEP 投稿中</span><span lang="en">submitted to JHEP</span></p>
+                    <div class="links">
+                        <a class="pill" href="https://arxiv.org/abs/2611.12071" target="_blank" rel="noopener">arXiv</a>
+                        <a class="pill ghost" href="https://arxiv.org/pdf/2611.12071" target="_blank" rel="noopener">PDF</a>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section id="refereed">
+        <h2><span lang="ja">査読付き論文</span><span lang="en">Refereed Papers</span></h2>
+        <ol class="papers">
+
+        </ol>
+        <p class="empty-note"><span lang="ja">現在ありません。</span><span lang="en">None yet.</span></p>
+    </section>
+
+</main>
+
+<footer>
+    <div class="chalk-tray" aria-hidden="true"><span class="eraser"></span><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wrap">
+        <span>© 2026 <span lang="ja">溝畑 海地</span><span lang="en">Kaichi Mizohata</span></span>
+        <span><span lang="ja">最終更新日: </span><span lang="en">Last updated: </span><span id="last-updated"></span></span>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
