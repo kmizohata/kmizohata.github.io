@@ -1,5 +1,4 @@
 :root {
-
   --bg: #121b17;
   --surface: rgba(255, 255, 255, .035);
   --chalk-yellow: #f4dc7a;
@@ -22,7 +21,6 @@
   --wall-line: rgba(236, 230, 221, .2);
   --frame: #b3b8b7;
   --frame-dark: #6c7270;
-
   --frame-shine: rgba(255, 255, 255, .35);
   --frame-sheen: rgba(255, 255, 255, .1);
   --shadow: none;
@@ -164,13 +162,11 @@ h2 .more { margin-left: auto; font-size: .85rem; font-weight: 600; }
 .paper .links { margin-top: 10px; }
 
 .talks { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-
 .talk { font-size: 0; }
 .talk .title { display: block; line-height: 1.5; margin: 0 0 4px; }
 .talk .title [lang] { font-size: 1.12rem; font-weight: 600; }
 .talk .venue [lang], .talk .place [lang], .talk time [lang],
 .talk .place::before, .talk time::before { color: var(--muted); font-size: .95rem; font-variant-numeric: tabular-nums; }
-
 .talk .place::before, .talk time::before { content: "、"; }
 html[data-ui="en"] .talk .place::before, html[data-ui="en"] .talk time::before { content: ", "; }
 .talk .place:not(:has(span:not(:empty))) { display: none; }
@@ -267,9 +263,7 @@ footer::before {
     linear-gradient(var(--frame), var(--frame-dark));
   box-shadow: 0 -2px 6px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .12);
 }
-
 .chalk-tray {
-
   position: absolute; top: 3px; height: 19px; transform: translateY(-100%);
   left: max(16px, calc(50% - 424px)); right: max(16px, calc(50% - 424px));
   pointer-events: none;
@@ -278,11 +272,9 @@ footer::before {
 .chalk-tray i {
   display: block; height: 7px; border-radius: 3px / 3.5px;
   background-color: var(--chalk, #f4f2ea);
-
   background-image: linear-gradient(rgba(255, 255, 255, .45), rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, .2));
   box-shadow: 0 1px 1.5px rgba(0, 0, 0, .45);
 }
-
 .chalk-tray i:nth-of-type(1) { left: 24%; width: 34px; --chalk: #f4f2ea; }
 .chalk-tray i:nth-of-type(2) { left: 35%; width: 25px; --chalk: var(--chalk-yellow); border-radius: 2px 3.5px 3.5px 2px / 3.5px; }
 .chalk-tray i:nth-of-type(3) { left: 52%; width: 30px; --chalk: var(--chalk-pink); transform: rotate(-3deg); }
@@ -324,7 +316,7 @@ body > main { flex: 1 0 auto; width: 100%; }
 @media (max-width: 640px) { .hero h1 { font-size: 2.6rem; } }
 
 .hero { padding-bottom: 20px; }
-.hero .reading { margin-bottom: 0; }
+.hero h1 .reading { font-size: .42em; font-weight: 400; letter-spacing: .05em; color: var(--muted); margin-left: .5em; white-space: nowrap; }
 .hero .position { margin: 0 0 4px; font-weight: 400; }
 .hero .email { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
 .hero .email .note { color: var(--muted); font-size: .85rem; }
@@ -369,7 +361,6 @@ html[data-ui="en"] .note .meta .pages::before { content: ", "; }
 .sr-label {
   position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
 }
-
 .hero .email { padding-left: 26px; text-indent: -26px; }
 
 .hero .profile-links { margin-top: 12px; }
