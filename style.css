@@ -334,6 +334,12 @@ body > main { flex: 1 0 auto; width: 100%; }
   color: var(--text); font-size: .88rem; font-weight: 600;
 }
 .jump-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.jump-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 4px; }
+.jump-row .jump-links { margin: 0; }
+.jump-row > .pill {
+  padding: 5px 14px; border: 1px solid var(--accent);
+  font-size: .88rem; line-height: inherit;
+}
 .jump-links .count {
   min-width: 1.6em; padding: 0 6px; border-radius: 999px; text-align: center;
   background: var(--accent-soft); color: var(--accent); font-size: .78rem; line-height: 1.6;
